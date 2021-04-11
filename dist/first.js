@@ -67,3 +67,4 @@ function getBonus(player) {
     return player.salary * 0.1;
 }
 const output = getBonus(kabila);
+// class type data is not learned yoet 
