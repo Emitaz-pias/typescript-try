@@ -39,4 +39,31 @@ const addCaller = add(2,4);
  // it will retunr automatically  it's type somethimes  and we can declare a function like this way and can set up value by another line like variable
 let multiply =(x:number , y :number) :number=>
 x*y
-multiply=(x,y)=>x*y // here we cannot pass strings as paramitters
+// something about array 
+// if we define an array without declaring it's tpye,typescript will automaticlly detect the type of the array
+const friendAge:Number[]=[3,4,5,6,8,9]
+//similar as for strings
+const friendName:string[]=["bolda","chikna","votka"]
+
+
+// for object we have to declare all the properties and value types 
+let myObj:{
+    name:string
+    age:number
+}
+
+myObj ={
+    name:"miavai",
+    age:4
+}
+// and we can't add extra properties too to the object
+let yourObject:{
+    name:string
+    age:number
+}
+yourObject={
+    name:"Minu",
+    age:18
+    // class :rich
+}
+// when we get error in ts it will not convert into js
