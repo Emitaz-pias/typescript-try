@@ -47,4 +47,23 @@ yourObject = {
     age: 18
     // class :rich
 };
-// when we get error in ts it will not convert into js
+// you have to fill all the properties with  right value type
+const nasir = {
+    name: "Naris",
+    age: 2,
+    club: "bcb",
+    salary: 343,
+    wife: "kana jolir er bou"
+};
+const kabila = {
+    name: "kala kashem",
+    age: 4,
+    club: "kaultia",
+    salary: 567,
+    wife: "sokhina"
+};
+// complex paramitter type
+function getBonus(player) {
+    return player.salary * 0.1;
+}
+const output = getBonus(kabila);

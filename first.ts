@@ -67,3 +67,33 @@ yourObject={
     // class :rich
 }
 // when we get error in ts it will not convert into js
+
+// interfaces is is something like template
+interface Player{
+     name:string
+     age:number
+     club:string
+     salary:number
+     wife:string
+}
+// you have to fill all the properties with  right value type
+const nasir:Player ={
+    name:"Naris",
+    age:2,
+    club:"bcb",
+    salary:343,
+    wife:"kana jolir er bou"
+}
+const kabila:Player={
+    name:"kala kashem",
+    age:4,
+    club:"kaultia",
+    salary:567,
+    wife:"sokhina"
+}
+
+// complex paramitter type
+function getBonus(player:Player){
+    return player.salary*0.1
+}
+const output=getBonus(kabila)
